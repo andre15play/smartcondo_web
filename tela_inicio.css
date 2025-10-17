@@ -1,0 +1,133 @@
+   body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background:line var(--background-color-body);
+      color: var(--color-body);
+    }
+:root {
+        --color-body: rgb(245 ,245 ,245);
+        --background-color-body: rgb(46, 46, 46);
+        --background-color-menu-button: #4ecdc4;
+        --background-color-dark-mode: rgb(69, 109, 145);
+        --color-menu-button: rgb(245 ,245 ,245);
+        --background-color-sidebar: rgb(46, 46, 46);
+        --background-color-logout-button: rgb(69, 109, 145);
+        --background-color-main: rgb(49, 49, 49);
+        --background-color-btn-cadastrar: rgb(15, 76, 117);
+        --color-btn-cadastrar: rgb(245 ,245 ,245);
+        --background-color-btn-logar: rgb(5, 73, 28);
+        --color-btn-logar: rgb(245 ,245 ,245);
+        --background-color-content: #555;
+      
+    }
+
+    .dark-mode:root {
+        --color-body: black;
+        --background-color-body: #f0f0f0;
+        --background-color-menu-button: #007bff;
+        --color-menu-button: white;
+        --background-color-sidebar: #e0e0e0;
+        --background-color-logout-button: #ff4d4d;
+        --background-color-main: #ffffff;
+        --background-color-btn-cadastrar: #1e73be;
+        --color-btn-cadastrar: white;
+        --background-color-btn-logar: #2e7d32;
+        --color-btn-logar: white;
+        --background-color-content: #f9f9f9;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Lateral */
+    .sidebar {
+      width: 200px;
+      background-color: var(--background-color-sidebar);
+      padding: 20px;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 150px;
+    }
+
+    .menu button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: var(--background-color-menu-button);
+      color: var(--color-menu-button);
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn-dark-mode{
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: var(--background-color-dark-mode);
+      color: var(--color-menu-button);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .logout {
+      margin-top: 500px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: var(--background-color-logout-button);
+      color: var(--color-menu-button);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Área principal */
+    .main {
+      flex: 1;
+      background-color: var(--background-color-main);
+      padding: 20px;
+    }
+
+    .main button {
+      margin-right: 10px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn-cadastrar {
+      background-color: var(--background-color-btn-cadastrar);
+      color: var(--color-btn-cadastrar);
+    }
+
+    .btn-logar {
+      background-color: var(--background-color-btn-logar);
+      color: var(--color-btn-logar);
+    }
+
+
+
+    .content {
+      margin-top: 20px;
+      background-color: var(--background-color-content);
+      height: 300px;
+      border-radius: 5px;
+    }
+  

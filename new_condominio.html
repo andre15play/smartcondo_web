@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário cadastro condominio</title>
+</head>
+<body>   
+ <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Cadastro de condominio</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nomecond" id="nomecond" class="inputUser" required>
+                    <label for="nomecond" class="labelInput">Nome do Condomínio</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="cnpj" id="cnpj" class="inputUser" required>
+                    <label for="cnpj" class="labelInput">CNPJ</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="bloco" id="bloco" class="inputUser" required>
+                    <label for="bloco" class="labelInput">Blocos/Torres</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="enderecocond" id="enderecocond" class="inputUser" required>
+                    <label for="enderecocond" class="labelInput">Endereço</label>
+                </div>
+                
+                <br><br>
+                <label for="fundacao"><b>Ano de fundação:</b></label>
+                <input type="date" name="fundacao" id="fundacao" required>
+                <br><br><br>
+                <div class="inputBox">
+                    <input type="text" name="unidades" id="unidades" class="inputUser" required>
+                    <label for="unidades" class="labelInput">Unidades</label>
+                </div>
+                <br><br>
+                
+                <input type="submit" name="submit" id="submit" >
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

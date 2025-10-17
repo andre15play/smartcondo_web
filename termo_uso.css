@@ -1,0 +1,64 @@
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333333; /* fundo escuro */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== TOPO AZUL COM LOGO ===== */
+header {
+    background-color: #0b446f; /* azul escuro */
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgtopnav {
+    height: 1000px;
+            width: 500px;;
+            margin-left: 0px;
+            margin-top: -1px;
+            max-width: 100%;
+            
+}
+
+/* ===== FAIXA CINZA COM TÍTULO ===== */
+.box {
+    background-color: #d3d3d3; /* cinza claro */
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* ===== TÍTULO ===== */
+.termonav h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin: 0;
+}
+
+/* ===== BOTÃO RETORNAR ===== */
+.return {
+    position: absolute;
+    left: 2px;
+    background-color: #00bcd4; /* azul claro */
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.return:hover {
+    background-color: #0097a7;
+}
+
