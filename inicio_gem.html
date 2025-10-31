@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCondo - Login</title>
+
+  <style>
+    /* ---------- ESTILOS GERAIS ---------- */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #2d2d2d; /* fundo escuro */
+      color: white;
+    }
+
+    /* ---------- CABEÇALHO ---------- */
+    header {
+      background-color: #0d4d7c; /* azul escuro */
+      padding: 1px;
+      text-align: center;
+    }
+
+    header{
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header {
+      font-size: 12px;
+      margin: 4px 0 0;
+    }
+
+    .banner img{
+      width: 300px;
+        height: auto;
+
+    }
+
+    /* ---------- CONTAINER DE LOGIN ---------- */
+    .login-box {
+      background-color: #1f1f1f;
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #000;
+      text-align: center;
+    }
+
+    .login-box h2 {
+      background-color: #375d83;
+      color: white;
+      padding: 5px 0;
+      border-radius: 5px;
+      margin-top: -10px;
+    }
+
+    /* ---------- CAMPOS DE INPUT ---------- */
+    input[type="email"],
+    input[type="password"] {
+      width: 90%;
+      padding: 8px;
+      margin: 8px 0;
+      border: none;
+      border-bottom: 2px solid #375d83;
+      background-color: #1f1f1f;
+      color: white;
+      outline: none;
+    }
+
+    /* ---------- LINKS ---------- */
+    .forgot {
+      font-size: 12px;
+      color: #aaa;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0 15px;
+    }
+
+    /* ---------- BOTÕES ---------- */
+    button {
+      width: 90%;
+      padding: 10px;
+      margin-top: 5px;
+      background-color: #4b6689;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background-color: #5d7da3;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- ---------- CABEÇALHO ---------- -->
+  <header>
+    <h1>
+        <div class = "banner"><img src="logo_claro.png" alt=""></div></h1>
+  </header>
+
+  <!-- ---------- CAIXA DE LOGIN ---------- -->
+  <div class="login-box">
+    <h2>Login</h2>
+
+    <form id="loginForm">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="senha" placeholder="Senha" required>
+
+      <a href="#" class="forgot">Esqueceu a senha?</a>
+
+      <button type="submit">Entrar</button>
+      <button type="button" onclick="cadastrar()">Cadastre-se</button>
+      
+    </form>
+  </div>
+
+  <script>
+    // ---------- SCRIPT SIMPLES DE LOGIN ----------
+    const form = document.getElementById('loginForm');
+
+    // Ao clicar em "Entrar"
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // evita recarregar a página
+      const email = document.getElementById('email').value;
+      const senha = document.getElementById('senha').value;
+
+      // Simulação de login simples
+      if (email === "admin@smartcondo.com" && senha === "1234") {
+        
+      } else {
+        alert("Email ou senha incorretos.");
+      }
+    });
+
+    // ---------- FUNÇÃO DE CADASTRO ----------
+    function cadastrar() {
+      alert("Página de cadastro em desenvolvimento...");
+    }
+  </script>
+</body>
+</html>
